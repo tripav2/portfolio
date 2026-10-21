@@ -7,7 +7,7 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Sticky nav shadow ---------- */
+  /* ---------- Sticky nav border ---------- */
   var nav = document.getElementById("nav");
   function onScroll() {
     nav.classList.toggle("scrolled", window.scrollY > 24);
@@ -42,81 +42,10 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -36px 0px" }
     );
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
-
-  /* ---------- Hero canvas: drifting circuit nodes ----------
-     Subtle on purpose — thin traces + soft amber nodes.
-     Skipped entirely for users who prefer reduced motion. */
-  if (reduceMotion) return;
-
-  var canvas = document.getElementById("heroCanvas");
-  var ctx = canvas.getContext("2d");
-  var W, H, nodes = [];
-  var NODE_COUNT = 46;
-  var LINK_DIST = 150;
-
-  function resize() {
-    var rect = canvas.parentElement.getBoundingClientRect();
-    W = canvas.width = Math.floor(rect.width);
-    H = canvas.height = Math.floor(rect.height);
-  }
-
-  function seed() {
-    nodes = [];
-    for (var i = 0; i < NODE_COUNT; i++) {
-      nodes.push({
-        x: Math.random() * W,
-        y: Math.random() * H,
-        vx: (Math.random() - 0.5) * 0.35,
-        vy: (Math.random() - 0.5) * 0.35,
-        r: 1.4 + Math.random() * 1.6
-      });
-    }
-  }
-
-  function step() {
-    ctx.clearRect(0, 0, W, H);
-
-    // Traces between nearby nodes
-    for (var i = 0; i < nodes.length; i++) {
-      var a = nodes[i];
-      for (var j = i + 1; j < nodes.length; j++) {
-        var b = nodes[j];
-        var dx = a.x - b.x, dy = a.y - b.y;
-        var d = Math.sqrt(dx * dx + dy * dy);
-        if (d < LINK_DIST) {
-          var alpha = (1 - d / LINK_DIST) * 0.16;
-          ctx.strokeStyle = "rgba(245,165,36," + alpha.toFixed(3) + ")";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(b.x, b.y);
-          ctx.stroke();
-        }
-      }
-    }
-
-    // Nodes
-    nodes.forEach(function (n) {
-      n.x += n.vx; n.y += n.vy;
-      if (n.x < 0 || n.x > W) n.vx *= -1;
-      if (n.y < 0 || n.y > H) n.vy *= -1;
-      ctx.fillStyle = "rgba(245,165,36,0.5)";
-      ctx.beginPath();
-      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      ctx.fill();
-    });
-
-    requestAnimationFrame(step);
-  }
-
-  resize();
-  seed();
-  window.addEventListener("resize", function () { resize(); seed(); });
-  step();
 })();

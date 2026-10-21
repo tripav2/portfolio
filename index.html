@@ -7,7 +7,7 @@
   <meta name="description" content="Viha Tripathi is an Electrical Engineering student at McMaster University. Projects in embedded systems, analog circuits, power electronics, and mixed-signal IC design." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,35 +15,14 @@
   <!-- ===================== NAV ===================== -->
   <header class="nav" id="nav">
     <div class="nav-inner">
-      <a class="logo" href="#top" aria-label="Back to top">VT<span class="logo-dot">.</span></a>
+      <a class="logo" href="#top" aria-label="Back to top">viha<span class="logo-dot">.</span></a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#contact">say hi</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero" id="top">
-    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
-    <div class="hero-inner">
-      <p class="eyebrow reveal">// electrical engineering · mcmaster university</p>
-      <h1 class="reveal">Hi, I'm <span class="accent">Viha Tripathi</span>.</h1>
-      <p class="hero-sub reveal">
-        I build things with circuits — embedded systems, analog design, and power
-        electronics. Currently deep in mixed-signal IC design and motor control.
-      </p>
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#projects">View my work</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
-      </div>
-      <div class="hero-social reveal" id="heroSocial">
+      <div class="nav-social">
         <a href="https://github.com/tripav2" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.11-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
         </a>
@@ -54,17 +33,35 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
         </a>
       </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <a class="scroll-hint" href="#about" aria-label="Scroll to about">
-      <span class="mouse"><span class="wheel"></span></span>
-    </a>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-kicker reveal">portfolio · viha tripathi</p>
+      <h1 class="reveal">hi, i'm <em>viha.</em></h1>
+      <svg class="trace" viewBox="0 0 320 48" aria-hidden="true">
+        <path class="trace-line" d="M0 24 H70 L85 24 L92 8 L99 40 L106 24 H150 L165 24 L172 8 L179 40 L186 24 H230 L245 24 L252 8 L259 40 L266 24 H320" />
+      </svg>
+      <p class="hero-sub reveal">
+        electrical engineering student at mcmaster university.<br />
+        i build things with circuits — and i learn by building.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="pill pill-solid" href="#contact">say hi</a>
+        <a class="pill pill-ghost" href="#projects">see the work</a>
+      </div>
+    </div>
   </section>
 
   <!-- ===================== ABOUT ===================== -->
   <section class="section" id="about">
     <div class="container">
-      <p class="eyebrow reveal">// about</p>
-      <h2 class="reveal">A bit <span class="accent">about me.</span></h2>
+      <h2 class="section-title reveal">— about —</h2>
       <div class="about-grid">
         <div class="about-text reveal">
           <p>
@@ -76,222 +73,169 @@
             Right now I'm spending most of my time on mixed-signal IC design and motor
             control, and I'm looking for a summer 2027 internship where I can keep learning.
           </p>
-          <div class="about-stats">
-            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Hardware projects built</span></div>
-            <div class="stat"><span class="stat-num">1</span><span class="stat-label">Project in progress right now</span></div>
-            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Languages: C · C++ · Python · Embedded C</span></div>
-          </div>
+          <p class="about-tools"><em>C · C++ · Python · Embedded C · ngspice · SKY130 · SolidWorks · Windchill / SAP</em></p>
         </div>
-        <div class="about-card reveal">
-          <div class="terminal">
-            <div class="terminal-bar"><span></span><span></span><span></span></div>
-            <div class="terminal-body">
-              <p><span class="t-prompt">$</span> whoami</p>
-              <p class="t-out">viha — ee undergrad, mcmaster</p>
-              <p><span class="t-prompt">$</span> interests</p>
-              <p class="t-out">mixed-signal ic design · embedded systems · motor control · power electronics</p>
-              <p><span class="t-prompt">$</span> currently</p>
-              <p class="t-out">thermal-monitor ip in sky130</p>
-              <p><span class="t-prompt">$</span> <span class="t-caret">▊</span></p>
-            </div>
-          </div>
-        </div>
+        <aside class="about-side reveal">
+          <div class="fact-row"><span class="fact-k">currently</span><span class="fact-v"><em>thermal-monitor ip in sky130</em></span></div>
+          <div class="fact-row"><span class="fact-k">previously</span><span class="fact-v">intern @ flowserve · intern @ hammond</span></div>
+          <div class="fact-row"><span class="fact-k">based in</span><span class="fact-v">hamilton, on</span></div>
+          <div class="fact-row"><span class="fact-k">outside lab</span><span class="fact-v"><em>eces rep · deltahacks · macser</em></span></div>
+        </aside>
       </div>
     </div>
   </section>
 
   <!-- ===================== PROJECTS ===================== -->
-  <section class="section section-alt" id="projects">
+  <section class="section" id="projects">
     <div class="container">
-      <p class="eyebrow reveal">// projects</p>
-      <h2 class="reveal">Things I've <span class="accent">built.</span></h2>
-      <p class="section-lead reveal">Real hardware, real firmware, real measurements — every project below was designed, built, and tested by hand.</p>
+      <h2 class="section-title reveal">— projects —</h2>
+      <p class="section-lead reveal">seven things i designed, built, and tested by hand — plus one still on the bench.</p>
 
-      <div class="project-grid">
+      <div class="project-list">
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="6"/><circle cx="24" cy="24" r="12" stroke-dasharray="4 3"/><circle cx="24" cy="24" r="18" stroke-dasharray="2 4"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>3D Spatial Mapping Sensor</h3>
-            <p class="project-meta">Jan 2025 – Mar 2025</p>
-            <div class="tags"><span>C</span><span>Python</span><span>Open3D</span><span>TM4C1294</span></div>
+        <article class="project reveal">
+          <span class="project-num">01</span>
+          <div class="project-main">
+            <h3>3D spatial mapping sensor</h3>
+            <p class="project-meta">jan 2025 – mar 2025</p>
             <p>A 360° indoor scanning system: a VL53L1X time-of-flight sensor on a stepper motor collects distance data every 11.25°, the microcontroller streams angle–distance pairs over UART, and a Python app renders live 2D/3D point clouds with Open3D.</p>
-            <div class="project-links">
-              <a href="https://github.com/tripav2/LiDAR-Scanner" target="_blank" rel="noopener">View code →</a>
-            </div>
+            <p class="project-tags"><em>C · Python · Open3D · TM4C1294</em></p>
+            <a class="text-link" href="https://github.com/tripav2/LiDAR-Scanner" target="_blank" rel="noopener">view code →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="14" width="32" height="20" rx="3"/><circle cx="17" cy="24" r="3"/><circle cx="31" cy="24" r="3"/><path d="M14 14V8h20v6M12 34v6M36 34v6"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>Automated Robotic Waste Sorting System</h3>
-            <div class="tags"><span>Robotics</span><span>Quanser</span><span>Sensor fusion</span></div>
+        <article class="project reveal">
+          <span class="project-num">02</span>
+          <div class="project-main">
+            <h3>Automated robotic waste sorting system</h3>
             <p>A line-following robot that detects recyclable materials by sensor and deposits containers into the right bins. Arm motion, hopper interaction, and sorting logic were validated in a Quanser simulation before building the 3D-printed, laser-cut physical prototype.</p>
-            <div class="project-links">
-              <a href="https://github.com/tripav2/Automated-Waste-Sorting-System" target="_blank" rel="noopener">View code →</a>
-            </div>
+            <p class="project-tags"><em>robotics · Quanser · sensor fusion</em></p>
+            <a class="text-link" href="https://github.com/tripav2/Automated-Waste-Sorting-System" target="_blank" rel="noopener">view code →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 30c6-8 10-14 14-14s8 6 14 14"/><circle cx="14" cy="34" r="2.5"/><circle cx="24" cy="34" r="2.5"/><circle cx="34" cy="34" r="2.5"/></svg>
-          </div>
-          <div class="project-body">
+        <article class="project reveal">
+          <span class="project-num">03</span>
+          <div class="project-main">
             <h3>SwiftSnake</h3>
-            <div class="tags"><span>C++</span><span>OOP</span><span>Data structures</span></div>
             <p>Two-player Snake in C++ built on custom data structures — dynamic arrays and a linked-list queue drive movement, food spawning, growth, and collision detection, with clean separation of game logic, rendering, and input handling.</p>
-            <div class="project-links">
-              <a href="https://github.com/COE2SH4-F2024/course-project-tripav2-ismailj" target="_blank" rel="noopener">View code →</a>
-            </div>
+            <p class="project-tags"><em>C++ · OOP · data structures</em></p>
+            <a class="text-link" href="https://github.com/COE2SH4-F2024/course-project-tripav2-ismailj" target="_blank" rel="noopener">view code →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 14h8v20H8zM8 18h-4M8 26h-4M8 30h-4M16 20h8M16 28h8M32 14h8v20h-8zM32 18h4M32 26h4M32 30h4"/><path d="M24 20v8" stroke-dasharray="2 2"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>CMOS XOR Gate</h3>
-            <p class="project-meta">Apr 2025 · Hamilton, ON</p>
-            <div class="tags"><span>CMOS</span><span>Analog design</span><span>Oscilloscope</span></div>
+        <article class="project reveal">
+          <span class="project-num">04</span>
+          <div class="project-main">
+            <h3>CMOS XOR gate</h3>
+            <p class="project-meta">apr 2025 · hamilton, on</p>
             <p>A 12-transistor CMOS XOR designed, simulated, and built from discrete PMOS/NMOS. Sized transistor ratios for ideal switching and measured rise/fall time and propagation delay on the scope — correct logic despite real-world sizing constraints.</p>
-            <div class="project-links">
-              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_3e7f008ddd5f44f8b434d4dcdd89bcb6.pdf" target="_blank" rel="noopener">View report →</a>
-            </div>
+            <p class="project-tags"><em>CMOS · analog design · oscilloscope</em></p>
+            <a class="text-link" href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_3e7f008ddd5f44f8b434d4dcdd89bcb6.pdf" target="_blank" rel="noopener">view report →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M26 6 12 26h10L22 42l14-20H26z"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>AC to DC Converter</h3>
-            <p class="project-meta">Feb 2025 · Hamilton, ON</p>
-            <div class="tags"><span>Power electronics</span><span>Rectifiers</span></div>
+        <article class="project reveal">
+          <span class="project-num">05</span>
+          <div class="project-main">
+            <h3>AC to DC converter</h3>
+            <p class="project-meta">feb 2025 · hamilton, on</p>
             <p>A DC supply delivering 10 mA at 3 V ±0.1 V from a 120 V (rms) 1 kHz input, using a center-tapped full-wave rectifier and filter capacitor. Simulated and measured regulation held within tolerance despite diode drops and capacitor tolerances.</p>
-            <div class="project-links">
-              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_0e446475814343e49b21274fa0c0c904.pdf" target="_blank" rel="noopener">View report →</a>
-            </div>
+            <p class="project-tags"><em>power electronics · rectifiers</em></p>
+            <a class="text-link" href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_0e446475814343e49b21274fa0c0c904.pdf" target="_blank" rel="noopener">view report →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="18" width="28" height="12" rx="2"/><path d="M4 24h6M38 24h6M18 18V8M30 18V8M18 40v-10M30 40v-10"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>Voltage-Controlled Switch</h3>
-            <p class="project-meta">Mar 2025 · Hamilton, ON</p>
-            <div class="tags"><span>MOSFETs</span><span>Analog</span><span>Characterization</span></div>
+        <article class="project reveal">
+          <span class="project-num">06</span>
+          <div class="project-main">
+            <h3>Voltage-controlled switch</h3>
+            <p class="project-meta">mar 2025 · hamilton, on</p>
             <p>Two MOSFET-based switch circuits characterized for ON/OFF resistance, leakage current, and bidirectionality. Measured results matched theory with small deviations — a hands-on study of real-device trade-offs.</p>
-            <div class="project-links">
-              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_998c8ef62ae14c8d907698702ac3132e.pdf" target="_blank" rel="noopener">View report →</a>
-            </div>
+            <p class="project-tags"><em>MOSFETs · analog · characterization</em></p>
+            <a class="text-link" href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_998c8ef62ae14c8d907698702ac3132e.pdf" target="_blank" rel="noopener">view report →</a>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="project-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 8v32M14 14c6 3 14 3 20 0M14 34c6-3 14-3 20 0"/><circle cx="24" cy="24" r="3"/></svg>
-          </div>
-          <div class="project-body">
-            <h3>Single Transistor Amplifier</h3>
-            <p class="project-meta">Mar 2025 · Hamilton, ON</p>
-            <div class="tags"><span>BJT</span><span>Analog</span><span>2N3904</span></div>
+        <article class="project reveal">
+          <span class="project-num">07</span>
+          <div class="project-main">
+            <h3>Single transistor amplifier</h3>
+            <p class="project-meta">mar 2025 · hamilton, on</p>
             <p>A 2N3904 common-collector (emitter-follower) stage designed as a buffer: high input impedance, low output impedance, ~0.9 gain between a 100 Ω source and load. Midband gain, linearity, and low harmonic distortion verified in simulation and on the bench.</p>
-            <div class="project-links">
-              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_cd7bf401e1e1443fa27f609a7840fb2c.pdf" target="_blank" rel="noopener">View report →</a>
-            </div>
+            <p class="project-tags"><em>BJT · analog · 2N3904</em></p>
+            <a class="text-link" href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_cd7bf401e1e1443fa27f609a7840fb2c.pdf" target="_blank" rel="noopener">view report →</a>
           </div>
         </article>
 
-      </div>
+        <article class="project reveal project-wip">
+          <span class="project-num">08</span>
+          <div class="project-main">
+            <h3>On-chip thermal monitor <span class="wip-tag">in progress</span></h3>
+            <p>Bandgap reference + temperature sensor + ADC mapping −20–100 °C to an 8-bit code, HOT flag at 85 °C, under 1 mW on 1.8 V — in the SKY130 process.</p>
+            <p class="project-tags"><em>mixed-signal · SKY130 · bandgap · ADC</em></p>
+          </div>
+        </article>
 
-      <!-- In progress -->
-      <h3 class="wip-title reveal">// currently building</h3>
-      <div class="wip-grid">
-        <div class="wip-card reveal">
-          <span class="wip-badge">In progress</span>
-          <h4>On-Chip Thermal Monitor <span class="wip-tech">· SKY130</span></h4>
-          <p>Bandgap reference + temperature sensor + ADC mapping −20–100 °C to an 8-bit code, HOT flag at 85 °C, under 1 mW on 1.8 V.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== SKILLS ===================== -->
-  <section class="section" id="skills">
-    <div class="container">
-      <p class="eyebrow reveal">// skills</p>
-      <h2 class="reveal">The <span class="accent">toolbox.</span></h2>
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3>Languages</h3>
-          <ul><li>C</li><li>C++</li><li>Python</li><li>Embedded C</li><li>MATLAB</li></ul>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Hardware</h3>
-          <ul><li>Oscilloscope &amp; bench instruments</li><li>TM4C1294 / MSP432</li><li>Analog Discovery 3</li><li>Soldering &amp; prototyping</li><li>3D printing · laser cutting</li></ul>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Design &amp; simulation</h3>
-          <ul><li>ngspice</li><li>SKY130 PDK</li><li>Open3D</li><li>Quanser</li><li>Git · Linux/WSL</li></ul>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== EXPERIENCE ===================== -->
-  <section class="section section-alt" id="experience">
+  <section class="section" id="experience">
     <div class="container">
-      <p class="eyebrow reveal">// experience</p>
-      <h2 class="reveal"><span class="accent">experience.</span></h2>
+      <h2 class="section-title reveal">— experience —</h2>
 
-      <div class="work-grid">
-        <article class="work-card reveal">
-          <span class="timeline-date">Jan 2026 – Sep 2026</span>
-          <h3>Electrical Engineering Intern</h3>
-          <p class="work-company">Flowserve Canada · Guelph, ON</p>
-          <ul>
-            <li>Upgraded controllers on industrial pump systems, then commissioned pump skids and control panels through wiring and functional tests.</li>
-            <li>Tagged equipment and wiring from P&amp;IDs across multiple pump wiring systems.</li>
-            <li>Owned full-cycle documentation — customer submittals and revision control in Windchill and SAP — across 5 major industrial projects.</li>
-          </ul>
-        </article>
-        <article class="work-card reveal">
-          <span class="timeline-date">Sep 2025 – Dec 2025</span>
-          <h3>Electrical Design Intern</h3>
-          <p class="work-company">Hammond Power Solutions · Guelph, ON</p>
-          <ul>
-            <li>Ran finite-element analyses in SolidWorks Flow Simulation to validate electrical enclosure designs.</li>
-            <li>Drove simulations to convergence, flagged design risks, and presented findings in technical reports and design reviews.</li>
-          </ul>
-        </article>
-      </div>
-
-      <h3 class="wip-title reveal">Beyond the <span class="accent">bench.</span></h3>
       <div class="timeline">
         <div class="timeline-item reveal">
-          <span class="timeline-date">2026 — present</span>
-          <h3>Department Representative · ECES</h3>
-          <p>Electrical and Computer Engineering Society — representing EE students and helping run department events.</p>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <p class="timeline-date">jan 2026 – sep 2026</p>
+            <h3>Electrical engineering intern</h3>
+            <p class="timeline-org"><em>Flowserve Canada · Guelph, ON</em></p>
+            <ul>
+              <li>Upgraded controllers on industrial pump systems, then commissioned pump skids and control panels through wiring and functional tests.</li>
+              <li>Tagged equipment and wiring from P&amp;IDs across multiple pump wiring systems.</li>
+              <li>Owned full-cycle documentation — customer submittals and revision control in Windchill and SAP — across 5 major industrial projects.</li>
+            </ul>
+          </div>
         </div>
         <div class="timeline-item reveal">
-          <span class="timeline-date">2026 — present</span>
-          <h3>Marketing Rep &amp; Judge · DeltaHacks</h3>
-          <p>McMaster's hackathon — marketing the event and judging hacker projects.</p>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <p class="timeline-date">sep 2025 – dec 2025</p>
+            <h3>Electrical design intern</h3>
+            <p class="timeline-org"><em>Hammond Power Solutions · Guelph, ON</em></p>
+            <ul>
+              <li>Ran finite-element analyses in SolidWorks Flow Simulation to validate electrical enclosure designs.</li>
+              <li>Drove simulations to convergence, flagged design risks, and presented findings in technical reports and design reviews.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title reveal">beyond the bench.</h3>
+      <div class="timeline timeline-simple">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <h3>Department representative</h3>
+            <p class="timeline-org"><em>Electrical and Computer Engineering Society (ECES)</em></p>
+          </div>
         </div>
         <div class="timeline-item reveal">
-          <span class="timeline-date">2026 — present</span>
-          <h3>Design Exec · MACSER</h3>
-          <p>McMaster Society for Engineering Research — design executive on the research club's team.</p>
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <h3>Marketing rep &amp; judge</h3>
+            <p class="timeline-org"><em>DeltaHacks — McMaster's hackathon</em></p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <div class="timeline-card">
+            <h3>Design executive</h3>
+            <p class="timeline-org"><em>McMaster Society for Engineering Research (MACSER)</em></p>
+          </div>
         </div>
       </div>
     </div>
@@ -300,22 +244,24 @@
   <!-- ===================== CONTACT ===================== -->
   <section class="section" id="contact">
     <div class="container contact-inner">
-      <p class="eyebrow reveal">// contact</p>
-      <h2 class="reveal">Let's <span class="accent">talk.</span></h2>
-      <p class="section-lead reveal">I'm always excited to connect! Feel free to reach out regarding opportunities, collaborations, or if you simply want to chat about new ideas.</p>
-      <div class="contact-actions reveal" id="contactActions">
-        <a class="btn btn-primary" href="mailto:tripav2@mcmaster.ca">tripav2@mcmaster.ca</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vihatripathi/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/tripav2" target="_blank" rel="noopener">GitHub</a>
+      <h2 class="section-title reveal">— say hi —</h2>
+      <p class="contact-big reveal">i'm always excited to <em>connect.</em></p>
+      <p class="section-lead reveal">Feel free to reach out regarding opportunities, collaborations, or if you simply want to chat about new ideas.</p>
+      <div class="contact-actions reveal">
+        <a class="pill pill-solid pill-lg" href="mailto:tripav2@mcmaster.ca">tripav2@mcmaster.ca</a>
       </div>
-      <p class="contact-note reveal">Hamilton, ON · Tel: 1-647-870-3060</p>
+      <div class="contact-row reveal">
+        <a class="text-link" href="https://www.linkedin.com/in/vihatripathi/" target="_blank" rel="noopener">linkedin →</a>
+        <a class="text-link" href="https://github.com/tripav2" target="_blank" rel="noopener">github →</a>
+        <span class="contact-phone">1-647-870-3060</span>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2026 Viha Tripathi · Built from scratch with HTML, CSS &amp; JS</p>
-      <a href="#top">Back to top ↑</a>
+      <p>designed &amp; hand-coded by viha tripathi · 2026</p>
+      <a href="#top">back to top ↑</a>
     </div>
   </footer>
 
