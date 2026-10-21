@@ -416,6 +416,40 @@ h2 {
 }
 
 /* ---------------- EXPERIENCE ---------------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+  margin-bottom: 8px;
+}
+.work-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.work-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-line);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.4);
+}
+.work-card h3 { font-size: 1.2rem; margin: 8px 0 2px; }
+.work-company { color: var(--accent); font-weight: 600; font-size: 0.92rem; margin-bottom: 16px; }
+.work-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.work-card li {
+  color: var(--muted);
+  font-size: 0.93rem;
+  padding-left: 22px;
+  position: relative;
+}
+.work-card li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 .timeline { display: flex; flex-direction: column; gap: 0; max-width: 720px; }
 .timeline-item {
   padding: 26px 0 26px 32px;
