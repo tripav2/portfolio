@@ -357,34 +357,28 @@ em { font-family: var(--font-serif); font-style: italic; }
 }
 
 .beyond-list {
-  max-width: 660px;
+  max-width: 640px;
   margin: 0 auto;
   border-top: 1px solid var(--border);
 }
 .beyond-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 24px;
-  padding: 24px 6px;
+  padding: 26px 6px;
   border-bottom: 1px solid var(--border);
 }
 .beyond-role {
+  display: block;
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  font-size: clamp(1.4rem, 3.4vw, 1.8rem);
   letter-spacing: -0.01em;
+  margin-bottom: 6px;
 }
 .beyond-where {
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  white-space: normal;
-  text-align: right;
-  max-width: 45%;
+  display: block;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
-.past-tag { font-family: var(--font-serif); font-style: italic; letter-spacing: 0.02em; color: var(--faint); font-weight: 400; }
+.past-tag { font-family: var(--font-serif); font-style: italic; color: var(--faint); }
 
 /* ---------------- CONTACT ---------------- */
 .contact-inner { text-align: center; max-width: 640px; }
@@ -459,5 +453,4 @@ em { font-family: var(--font-serif); font-style: italic; }
   .nav-social { display: none; }
   .project { grid-template-columns: 1fr; gap: 8px; padding: 36px 0; }
   .project-num { padding-top: 0; }
-  .beyond-row { flex-direction: column; gap: 6px; }
 }
