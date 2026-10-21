@@ -378,9 +378,11 @@ em { font-family: var(--font-serif); font-style: italic; }
 .beyond-where {
   font-size: 0.76rem;
   font-weight: 600;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.18em;
   color: var(--accent);
-  white-space: nowrap;
+  white-space: normal;
+  text-align: right;
+  max-width: 45%;
 }
 .past-tag { font-family: var(--font-serif); font-style: italic; letter-spacing: 0.02em; color: var(--faint); font-weight: 400; }
 
