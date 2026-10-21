@@ -1,5 +1,5 @@
 /* ============================================================
-   Viha Tripathi — Portfolio
+   Viha Tripathi - Portfolio
    Warm editorial theme. Fraunces serif + Inter.
    One file, no frameworks.
    ============================================================ */
@@ -354,7 +354,7 @@ em { font-family: var(--font-serif); font-style: italic; }
   position: relative;
 }
 .timeline-card li::before {
-  content: "—";
+  content: "-";
   position: absolute;
   left: 0;
   color: var(--accent);

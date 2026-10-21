@@ -1,5 +1,5 @@
 /* ============================================================
-   Viha Tripathi — Portfolio interactions
+   Viha Tripathi - Portfolio interactions
    Plain JS, no dependencies.
    ============================================================ */
 (function () {
