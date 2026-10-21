@@ -219,8 +219,6 @@ em { font-family: var(--font-serif); font-style: italic; }
 .about-centered p { color: var(--muted); margin-bottom: 20px; font-size: 1.06rem; }
 .about-personal { margin-top: 28px; margin-bottom: 0 !important; }
 .about-personal em { color: var(--accent); font-size: 1.12rem; }
-.about-interests { margin-bottom: 0; }
-.about-interests em { color: var(--muted); font-size: 1.02rem; }
 
 /* ---------------- PROJECTS ---------------- */
 .project-list {
