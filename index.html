@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viha Tripathi — Electrical Engineering Portfolio</title>
+  <meta name="description" content="Viha Tripathi is an Electrical Engineering student at McMaster University. Projects in embedded systems, analog circuits, power electronics, and mixed-signal IC design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="Back to top">VT<span class="logo-dot">.</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">// electrical engineering · mcmaster university</p>
+      <h1 class="reveal">Hi, I'm <span class="accent">Viha Tripathi</span>.</h1>
+      <p class="hero-sub reveal">
+        I build things with circuits — embedded systems, analog design, and power
+        electronics. Currently deep in mixed-signal IC design and motor control.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#projects">View my work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-social reveal" id="heroSocial">
+        <a href="https://github.com/tripav2" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.11-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/vihatripathi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+        <a href="mailto:tripav2@mcmaster.ca" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll to about">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow reveal">// about</p>
+      <h2 class="reveal">Engineer first, <span class="accent">tinkerer always.</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm an Electrical Engineering student at McMaster University who learns by building.
+            My projects span the stack — from CMOS gates and power supplies on the bench, to
+            firmware on microcontrollers, to mixed-signal IC blocks in the SKY130 process.
+          </p>
+          <p>
+            Right now I'm working toward internships in mixed-signal design and embedded
+            systems, and every project on this page taught me something a textbook couldn't.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Hardware projects built</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">In progress right now</span></div>
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Languages: C · C++ · Python · Embedded C</span></div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="terminal">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">viha — ee undergrad, mcmaster</p>
+              <p><span class="t-prompt">$</span> interests</p>
+              <p class="t-out">mixed-signal ic design · embedded systems · motor control · power electronics</p>
+              <p><span class="t-prompt">$</span> currently</p>
+              <p class="t-out">thermal-monitor ip in sky130 · foc motor controller · "hey muse" ear-wearable</p>
+              <p><span class="t-prompt">$</span> <span class="t-caret">▊</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">// projects</p>
+      <h2 class="reveal">Things I've <span class="accent">built.</span></h2>
+      <p class="section-lead reveal">Real hardware, real firmware, real measurements — every project below was designed, built, and tested by hand.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="6"/><circle cx="24" cy="24" r="12" stroke-dasharray="4 3"/><circle cx="24" cy="24" r="18" stroke-dasharray="2 4"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>3D Spatial Mapping Sensor</h3>
+            <p class="project-meta">Jan 2025 – Mar 2025</p>
+            <div class="tags"><span>C</span><span>Python</span><span>Open3D</span><span>TM4C1294</span></div>
+            <p>A 360° indoor scanning system: a VL53L1X time-of-flight sensor on a stepper motor collects distance data every 11.25°, the microcontroller streams angle–distance pairs over UART, and a Python app renders live 2D/3D point clouds with Open3D.</p>
+            <div class="project-links">
+              <a href="https://github.com/tripav2/LiDAR-Scanner" target="_blank" rel="noopener">View code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="14" width="32" height="20" rx="3"/><circle cx="17" cy="24" r="3"/><circle cx="31" cy="24" r="3"/><path d="M14 14V8h20v6M12 34v6M36 34v6"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>Automated Robotic Waste Sorting System</h3>
+            <div class="tags"><span>Robotics</span><span>Quanser</span><span>Sensor fusion</span></div>
+            <p>A line-following robot that detects recyclable materials by sensor and deposits containers into the right bins. Arm motion, hopper interaction, and sorting logic were validated in a Quanser simulation before building the 3D-printed, laser-cut physical prototype.</p>
+            <div class="project-links">
+              <a href="https://github.com/tripav2/Automated-Waste-Sorting-System" target="_blank" rel="noopener">View code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 30c6-8 10-14 14-14s8 6 14 14"/><circle cx="14" cy="34" r="2.5"/><circle cx="24" cy="34" r="2.5"/><circle cx="34" cy="34" r="2.5"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>SwiftSnake</h3>
+            <div class="tags"><span>C++</span><span>OOP</span><span>Data structures</span></div>
+            <p>Two-player Snake in C++ built on custom data structures — dynamic arrays and a linked-list queue drive movement, food spawning, growth, and collision detection, with clean separation of game logic, rendering, and input handling.</p>
+            <div class="project-links">
+              <a href="https://github.com/COE2SH4-F2024/course-project-tripav2-ismailj" target="_blank" rel="noopener">View code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 14h8v20H8zM8 18h-4M8 26h-4M8 30h-4M16 20h8M16 28h8M32 14h8v20h-8zM32 18h4M32 26h4M32 30h4"/><path d="M24 20v8" stroke-dasharray="2 2"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>CMOS XOR Gate</h3>
+            <p class="project-meta">Apr 2025 · Hamilton, ON</p>
+            <div class="tags"><span>CMOS</span><span>Analog design</span><span>Oscilloscope</span></div>
+            <p>A 12-transistor CMOS XOR designed, simulated, and built from discrete PMOS/NMOS. Sized transistor ratios for ideal switching and measured rise/fall time and propagation delay on the scope — correct logic despite real-world sizing constraints.</p>
+            <div class="project-links">
+              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_3e7f008ddd5f44f8b434d4dcdd89bcb6.pdf" target="_blank" rel="noopener">View report →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M26 6 12 26h10L22 42l14-20H26z"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>AC to DC Converter</h3>
+            <p class="project-meta">Feb 2025 · Hamilton, ON</p>
+            <div class="tags"><span>Power electronics</span><span>Rectifiers</span></div>
+            <p>A DC supply delivering 10 mA at 3 V ±0.1 V from a 120 V (rms) 1 kHz input, using a center-tapped full-wave rectifier and filter capacitor. Simulated and measured regulation held within tolerance despite diode drops and capacitor tolerances.</p>
+            <div class="project-links">
+              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_0e446475814343e49b21274fa0c0c904.pdf" target="_blank" rel="noopener">View report →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="18" width="28" height="12" rx="2"/><path d="M4 24h6M38 24h6M18 18V8M30 18V8M18 40v-10M30 40v-10"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>Voltage-Controlled Switch</h3>
+            <p class="project-meta">Mar 2025 · Hamilton, ON</p>
+            <div class="tags"><span>MOSFETs</span><span>Analog</span><span>Characterization</span></div>
+            <p>Two MOSFET-based switch circuits characterized for ON/OFF resistance, leakage current, and bidirectionality. Measured results matched theory with small deviations — a hands-on study of real-device trade-offs.</p>
+            <div class="project-links">
+              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_998c8ef62ae14c8d907698702ac3132e.pdf" target="_blank" rel="noopener">View report →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 8v32M14 14c6 3 14 3 20 0M14 34c6-3 14-3 20 0"/><circle cx="24" cy="24" r="3"/></svg>
+          </div>
+          <div class="project-body">
+            <h3>Single Transistor Amplifier</h3>
+            <p class="project-meta">Mar 2025 · Hamilton, ON</p>
+            <div class="tags"><span>BJT</span><span>Analog</span><span>2N3904</span></div>
+            <p>A 2N3904 common-collector (emitter-follower) stage designed as a buffer: high input impedance, low output impedance, ~0.9 gain between a 100 Ω source and load. Midband gain, linearity, and low harmonic distortion verified in simulation and on the bench.</p>
+            <div class="project-links">
+              <a href="https://ed6dbc7e-28a9-4196-890f-e6fc426d857d.usrfiles.com/ugd/ed6dbc_cd7bf401e1e1443fa27f609a7840fb2c.pdf" target="_blank" rel="noopener">View report →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- In progress -->
+      <h3 class="wip-title reveal">// currently building</h3>
+      <div class="wip-grid">
+        <div class="wip-card reveal">
+          <span class="wip-badge">In progress</span>
+          <h4>On-Chip Thermal Monitor <span class="wip-tech">· SKY130</span></h4>
+          <p>Bandgap reference + temperature sensor + ADC mapping −20–100 °C to an 8-bit code, HOT flag at 85 °C, under 1 mW on 1.8 V.</p>
+        </div>
+        <div class="wip-card reveal">
+          <span class="wip-badge">In progress</span>
+          <h4>FOC BLDC Motor Controller</h4>
+          <p>3-phase inverter with closed-loop current control — Clarke/Park transforms and SVPWM written from scratch in Embedded C on an MSP432.</p>
+        </div>
+        <div class="wip-card reveal">
+          <span class="wip-badge">In progress</span>
+          <h4>"Hey Muse" Ear-Wearable</h4>
+          <p>Always-on voice device: ESP32-S3 wake-word keyword spotting streams audio over BLE to a phone app running the conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="eyebrow reveal">// skills</p>
+      <h2 class="reveal">The <span class="accent">toolbox.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <ul><li>C</li><li>C++</li><li>Python</li><li>Embedded C</li><li>MATLAB</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Hardware</h3>
+          <ul><li>Oscilloscope &amp; bench instruments</li><li>TM4C1294 / MSP432</li><li>Analog Discovery 3</li><li>Soldering &amp; prototyping</li><li>3D printing · laser cutting</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Design &amp; simulation</h3>
+          <ul><li>ngspice</li><li>SKY130 PDK</li><li>Open3D</li><li>Quanser</li><li>Git · Linux/WSL</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="eyebrow reveal">// experience</p>
+      <h2 class="reveal">Beyond the <span class="accent">bench.</span></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-date">2026 — present</span>
+          <h3>Department Representative · ECES</h3>
+          <p>Electrical and Computer Engineering Society — representing EE students and helping run department events.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date">2026 — present</span>
+          <h3>Marketing Rep &amp; Judge · DeltaHacks</h3>
+          <p>McMaster's hackathon — marketing the event and judging hacker projects.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date">2026 — present</span>
+          <h3>Design Exec · MACSER</h3>
+          <p>McMaster Society for Engineering Research — design executive on the research club's team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow reveal">// contact</p>
+      <h2 class="reveal">Let's <span class="accent">talk.</span></h2>
+      <p class="section-lead reveal">I'm always excited to connect! Feel free to reach out regarding opportunities, collaborations, or if you simply want to chat about new ideas.</p>
+      <div class="contact-actions reveal" id="contactActions">
+        <a class="btn btn-primary" href="mailto:tripav2@mcmaster.ca">tripav2@mcmaster.ca</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vihatripathi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/tripav2" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="contact-note reveal">Hamilton, ON · Tel: 1-647-870-3060</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Viha Tripathi · Built from scratch with HTML, CSS &amp; JS</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
