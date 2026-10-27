@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AC to DC Converter · Viha Tripathi</title>
+  <meta name="description" content="A DC supply delivering 10 mA at 3 V, plus or minus 0.1 V, from a 120 V rms 1 kHz input." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark">VT</span><span class="brand-name">Viha Tripathi</span></a>
+    <nav class="nav-links"><a href="index.html#projects">← All projects</a></nav>
+  </header>
+  <main class="case">
+    <p class="case-kicker">Project</p>
+    <h1>AC to DC Converter</h1>
+    <p class="case-meta">Feb 2025 · Hamilton, ON</p>
+    <p class="case-lead">A DC supply delivering 10 mA at 3 V ±0.1 V from a 120 V (rms) 1 kHz input.</p>
+    <h2>What I did</h2>
+    <ul>
+      <li>Built a center-tapped full-wave rectifier with a filter capacitor.</li>
+      <li>Simulated and measured output regulation.</li>
+      <li>Verified the design held up against diode drops and capacitor tolerances.</li>
+    </ul>
+    <h2>Result</h2>
+    <p>Regulation held within tolerance despite diode drops and capacitor tolerances.</p>
+    <figure><img src="case-images/final/acdc-block.png" alt="System block diagram" /><figcaption>System block diagram: transformer, rectifier, filter, regulator</figcaption></figure>
+    <figure><img src="case-images/final/acdc-breadboard.png" alt="The built converter on a breadboard" /><figcaption>The built converter on a breadboard</figcaption></figure>
+    <figure><img src="case-images/final/acdc-output.png" alt="Measured DC output" /><figcaption>Measured DC output</figcaption></figure>
+    <a class="case-back" href="index.html#projects">← Back to projects</a>
+  </main>
+</body>
+</html>
