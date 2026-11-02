@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BJT Characterization and Current Sink Design · Viha Tripathi</title>
+  <meta name="description" content="DC characterization of 2N3904 and 2N3906 transistors in simulation and on the bench, plus a designed 1 mA current sink with emitter degeneration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-mark">VT</span><span class="brand-name">Viha Tripathi</span></a>
+    <nav class="nav-links"><a href="index.html#projects">← All projects</a></nav>
+  </header>
+  <main class="case">
+    <p class="case-kicker">Project</p>
+    <h1>BJT Characterization and Current Sink Design</h1>
+    <p class="case-meta">Sep 2026 · Hamilton, ON</p>
+    <p class="case-lead">Measured the DC behaviour of two discrete transistors, extracted the small-signal parameters that amplifier design actually uses, and finished by designing a current sink that holds 1 mA.</p>
+    <h2>What I did</h2>
+    <ul>
+      <li>Characterized a 2N3904 NPN in PSpice and on the bench at a collector current near 1 mA. Measured current gain came out at 106 against 117 in simulation, with transconductance of 34.8 mS, output resistance of 103.6 kΩ, and an Early voltage near 90 V, much lower than the model suggested.</li>
+      <li>Repeated the characterization for a 2N3906 PNP, which measured a current gain of 292 and transconductance of 97.7 mS at 2.44 mA.</li>
+      <li>Designed a current sink for an output current of 1.0 mA and a minimum output voltage of -2 V from a -5 V supply, choosing a 100 kΩ base resistor and solving for the remaining values.</li>
+      <li>Showed with the small-signal model why the emitter resistor raises the sink's output resistance and stabilizes the bias point against supply changes, then verified the design in simulation.</li>
+    </ul>
+    <h2>Result</h2>
+    <p>The simulated sink holds its 1 mA output current with the transistor in the active region down to a collector-emitter voltage of 0.3 V. The bench measurements tracked the simulation closely on current gain and transconductance, and showed the Early effect is far stronger in the real device than in the model.</p>
+    <figure><img src="case-images/final/lab1-breadboard.jpg" alt="The single-transistor test circuit on a breadboard" /><figcaption>The transistor test circuit on the breadboard</figcaption></figure>
+    <figure><img src="case-images/final/lab1-circuit.jpg" alt="Close-up of the transistor and its biasing resistors" /><figcaption>Close-up of the device under test and its biasing resistors</figcaption></figure>
+    <a class="case-back" href="index.html#projects">← Back to projects</a>
+  </main>
+</body>
+</html>
